@@ -105,3 +105,32 @@
         margin-bottom: 192px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .input__formulario {
+        width: 522px;
+    }
+    .esconde__formulario{
+        background-image: url(../image/Tablet/formulario/Vector.svg);
+        position: absolute;
+        left: 61%;
+        right: 39.65%;
+        top: 65%;
+        bottom: 40.14%;
+    }
+    .esconde__formulario2{
+        background-image: url(../image/Tablet/formulario/Vector.svg);
+        position: absolute;
+        left: 61%;
+        right: 39.65%;
+        top: 74%;
+        bottom: 40.14%;
+    }
+    .esconde__formulario3{
+        background-image: url(../image/Tablet/formulario/Vector.svg);
+        position: absolute;
+        left: 62%;
+        right: 39.65%;
+        top: 52%;
+        bottom: 50.39%;
+    }
+}

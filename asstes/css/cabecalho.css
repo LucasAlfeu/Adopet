@@ -32,3 +32,12 @@
         width: 128px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .cabecalho{
+        margin: 0 145px;
+    }
+    .perfil__cabecalho{
+        height: 56px;
+        width: 56px;
+    }
+}

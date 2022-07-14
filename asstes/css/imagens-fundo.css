@@ -85,3 +85,37 @@
         background-image: none;
     }
 }
+@media screen and (min-width: 1440px) {
+    .imagem-1{
+        background-image: url(../image/Computador/imagens-de-fundo/Vector\ 1.svg);
+        position: absolute;
+        width: 530px;
+        height: 434.85px;
+        left: -1.17px;
+        top: -1px;
+    }
+    .imagem-2{
+        background-image: url(../image/Computador/imagens-de-fundo/Vector\ 4.svg);
+        position: absolute;
+        width: 559.8px;
+        height: 469px;
+        left: 0px;
+        top: 0px;
+    }
+    .imagem-3{
+        background-image: url(../image/Computador/imagens-de-fundo/Forma\ 2.svg);
+        position: absolute;
+        width: 134.45px;
+        height: 664px;
+        left: 1769px;
+        top: 180px;
+    }
+    .imagem-patas{
+        background-image: url(../image/Computador/imagens-de-fundo/Patas.svg);
+        position: absolute;
+        width: 290px;
+        height: 407.04px;
+        left: 1610px;
+        top: -18.19px;
+    }
+}

@@ -39,3 +39,10 @@ body{
         width: 339px;
     }    
 }
+@media screen and (min-width: 1440px) {
+    .principal__ilustracao{
+        background-image: url(../image/Computador/imagens-de-fundo/Ilustração.svg);
+        position: relative;
+        left: 585px;
+    }
+}

@@ -78,3 +78,11 @@
         width: 344px;
     }
 }
+@media screen and (min-width: 1440px) {
+    .adocao__lista{
+        margin: 50px 390px;
+    }
+    .item__lista{
+        width: 363px;
+    }
+}

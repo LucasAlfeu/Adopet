@@ -84,3 +84,9 @@
         resize: none;
     }
 }
+@media screen and (min-width: 1440px) {
+    .perfil__cabecalho--foto{
+        height: 64px;
+        width: 64px;
+    }
+}
