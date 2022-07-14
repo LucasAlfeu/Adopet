@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --fonte: 'Poppins', sans-serif;
+
+    --verde: #36D6AD;
+    --branco: #ffffff;
+    --azul: #3772FF;
+    --coral: #FC7071;
+    --creme: #FCF0E3;
+    --cinza: #737380;
+    --cinza-claro: #BCBCBC;
+    --cinza-claro-fundos: #F7F7F7; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte);
+}
+
+.separacao{
+    margin-bottom: 13rem;
+}

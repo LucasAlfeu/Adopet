@@ -1,0 +1,20 @@
+a{
+    color: var(--branco);
+    text-decoration: none;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.link__entrar, .link__cadastrar{
+    background-color: var(--coral);
+    border: 1px solid #FC7071;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1.75rem;
+    width: 170px;
+}

@@ -1,0 +1,80 @@
+.principal{
+    margin-top: 3.5rem;
+}
+.texto{
+    font-size: 1rem;
+    line-height: 20px;
+    margin: 0 3rem;
+}
+.adocao__lista{
+    margin-top: rem;
+    position: relative;
+    z-index: -10000;
+    left: 0;
+}
+.item__lista{
+    align-items: center;
+    background-color: var(--cinza-claro-fundos);
+    display: flex;
+    justify-content: center;
+    height: 12.25rem;
+    margin-top: 1rem;
+    width: 360px;
+}
+.imagem__lista{
+    height: 148px;
+    width: 148px;
+}
+.conatiner__lista{
+    text-align: left;
+    padding-left: 1rem;
+}
+.titulo__lista{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--azul);
+}
+.texto__lista{
+    color: var(--cinza);
+    font-size: 14px;
+    margin-top: 0.5rem;
+    width: 10.75rem;
+}
+.cidade__lista{
+    color: var(--cinza);
+    font-size: 12px;
+    margin-top: 1.875rem;
+}
+.caixa__contato{
+    align-items: center;
+    display: flex;
+    margin-top: .5rem;
+}
+.image__contato{
+    background-image: url(../image/Mobile/Adocao/ícone\ mensagem.svg);
+    height: 18px;
+    margin-right: .5rem;
+    width: 18px;
+}
+.link__contato{
+    color: var(--cinza);
+    font-size: 10px;
+    line-height: 16px;
+    text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+    .principal{
+        margin-top: 150px;
+    }
+    .adocao__lista{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 50px 2rem 2rem;
+    }
+    .item__lista{
+        height: 196px;
+        width: 344px;
+    }
+}

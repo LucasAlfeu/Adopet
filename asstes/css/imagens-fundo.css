@@ -1,0 +1,87 @@
+.imagem-1{
+    background-image: url(../image/Mobile/Imagens-Fundo/Vector\ 1.svg);
+    background-repeat: no-repeat;
+    height: 273.52px;
+    position: absolute;
+    top: 0;
+    width: 333.25px;
+    z-index: -100;
+}
+.imagem-2{
+    background-image: url(../image/Mobile/Imagens-Fundo/Vector\ 4.svg);
+    background-repeat: no-repeat;
+    height: 295px;
+    position: absolute;
+    top: 0;  
+    width: 352px;
+    z-index: -100;  
+}
+.imagem-3{
+    background-image: url(../image/Mobile/Imagens-Fundo/Forma\ 2.svg);
+    background-repeat: no-repeat;
+    height: 415px;
+    left: 290px;
+    position: absolute;
+    top: 199px;
+    width: 70px;
+    z-index: -100;
+}
+.imagem-cadastro-login {
+    background-image: url(../image/Mobile/Imagens-Fundo/Forma\ 2.svg);
+    background-repeat: no-repeat;
+    height: 415px;
+    left: -12px;
+    position: absolute;
+    top: 368px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 84px;
+    z-index: -100;
+}
+.imagem-patas {
+    background-image: url(../image/Mobile/Imagens-Fundo/Patas.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 181px;
+    left: 225px;
+    top: 0px;    
+    width: 135px;
+    z-index: -10;
+}
+@media screen and (min-width: 768px) {
+    .imagem-1{
+        background-image: url(../image/Tablet/imagem-fundo/Vector\ 1.svg);
+        height: 435px;
+        width: 530px;
+        left: -1.1669921875px;
+        top: -1px;
+        border-radius: 0px;
+        
+    }
+    .imagem-2{
+        background-image: url(../image/Tablet/imagem-fundo/Vector\ 4.svg);
+        height: 469px;
+        width: 560px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+    }
+    .imagem-3{
+        background-image: url(../image/Tablet/imagem-fundo/Forma\ 2.svg);
+        height: 664px;
+        width: 135px;
+        left: 634px;
+        top: 268px;
+        border-radius: 0px;
+
+    }
+    .imagem-patas{
+        background-image: url(../image/Tablet/imagem-fundo/Patas.svg);
+        height: 375px;
+        width: 223px;
+        left: 544px;
+        top: -36px;
+    }
+    .imagem-cadastro-login{
+        background-image: none;
+    }
+}

@@ -1,0 +1,86 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.perfil{
+    align-items: center;
+    background-color: var(--cinza-claro-fundos);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 24px;
+    padding: 16px 16px 0 16px;    
+    text-align: left;
+    width: 280px;
+}
+.titulo__perfil{
+    color: var(--cinza);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 2rem;
+}
+.foto__perfil{
+    background-image: url(../image/Mobile/Perfil/Ellipse\ 2.svg);
+    width: 80px;
+    height: 80px;
+}
+.editar-foto__perfil{
+    color: var(--coral);
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 0.25rem;
+}
+.label__perfil{
+    color: var(--azul);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.input{
+    font-size: 14px;
+    padding: .5rem 1rem;
+    border: none;
+    height: 32px;
+    width: 248px;
+    background: var(--branco);
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    margin-top: .5rem;
+}
+.input__sobre{
+    display: block;
+    font-size: 14px;
+    font-family: var(--fonte);
+    color: var(--cinza);
+    height: 156px;
+    resize: none;
+}
+.botao__perfil{
+    border: none;
+    background-color: var(--coral);
+    width: 148px;
+    height: 40px;
+    border-radius: 6px;
+    color: var(--branco);
+    font-weight: 600;
+    margin: 2rem 5.375rem;
+}
+@media screen and (min-width: 768px) {
+    .principal{
+        margin: 150px 122px 2rem;
+    }
+    .perfil{
+        width: 524px;
+    }
+    .input{
+        width: 492px
+    }
+    .input__sobre{
+        resize: none;
+    }
+}

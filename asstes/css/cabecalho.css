@@ -1,0 +1,34 @@
+.cabecalho {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: auto;
+    padding: 2rem;
+}
+
+.home__cabecalho{
+    margin-right: 3.6rem;
+}
+
+.perfil__cabecalho {
+    background: url(../image/Mobile/Header/Usuário.png) center / cover no-repeat;
+    height: 40px;
+    width: 40px;
+}
+.perfil__cabecalho--foto {
+    background: url(../image/Mobile/Perfil/Ellipse\ 2.svg) center / cover no-repeat;    
+    height: 40px;
+    width: 40px;
+}
+@media screen and (min-width: 768px) {
+    .cabecalho__container{
+        display: flex;
+        margin-top: 2rem;
+    }
+    .logo__cabecalho{
+        background-image: url(../image/Tablet/header/Logo.svg);
+        margin-right: 65px;
+        height: 30px;
+        width: 128px;
+    }
+}

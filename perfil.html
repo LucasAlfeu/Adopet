@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Adopet</title>
+
+    <link rel="stylesheet" href="./asstes/css/style.css">
+    <link rel="stylesheet" href="./asstes/css/cabecalho.css">
+    <link rel="stylesheet" href="./asstes/css/imagens-fundo.css">
+    <link rel="stylesheet" href="./asstes/css/titulo-texto.css">
+    <link rel="stylesheet" href="./asstes/css/perfil.css">
+    <link rel="stylesheet" href="./asstes/css/rodape.css">
+
+</head>
+<body>
+    <div class="imagem-1"></div>
+    <div class="imagem-2"></div>
+    <div class="imagem-3"></div>
+
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="logo__cabecalho"></div>
+            <a href="./home.html" class="home__cabecalho"><img src="./asstes/image/Mobile/Header/Casa.svg" alt="Inicio"></a>
+            <a href="./mensagem.html" class="mensagem__cabecalho"><img src="./asstes/image/Mobile/Header/Mensagens.svg" alt="Mensagens"></a>
+        </div>
+        <a href="./perfil.html"><div class="perfil__cabecalho--foto"></div></a>
+    </header>
+    <main class="principal">
+        <p class="texto">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+
+        <section class="perfil">
+            <h2 class="titulo__perfil">Perfil</h2>
+
+            <label for="Foto" class="label__perfil">Foto</label>
+            <div class="foto__perfil"></div>
+            <p class="editar-foto__perfil">Clique na foto para editar</p>
+
+            <label for="nome" class="label__perfil">Nome</label>
+            <input type="text" name="" id="nome" class="input" placeholder="Digite seu nome completo" required>
+
+            <label for="telefone" class="label__perfil">Telefone</label>
+            <input type="tel" name="" id="telefone" class="input" placeholder="55 (XX) XXXXX XXXX" required>
+
+            <label for="cidade" class="label__perfil">Cidade</label>
+            <input type="text" name="" id="cidade" class="input" placeholder="Insira sua cidade" required>
+
+            <label for="sobre" class="label__perfil sobre">Sobre</label>
+            <textarea cols="70" rows="10" id="sobre" class="input input__sobre" placeholder="Escreva sobre você."></textarea>
+
+            <input type="button" value="Salvar" class="botao__perfil">
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="texto__rodape">2022 - Desenvolvido por Alura.</p>
+    </footer>
+</body>
+</html>

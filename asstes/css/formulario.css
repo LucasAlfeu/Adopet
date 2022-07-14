@@ -1,0 +1,107 @@
+
+.imagem-3{
+    background-image: none;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 2.2rem;
+}
+.nome__formulario{
+    color: var(--cinza);
+    line-height: 1.5rem;
+    margin-bottom: 0.25rem;
+    padding-top: 20px;
+}
+.input__formulario{
+    background-color: var(--cinza-claro-fundos);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    color: var(--cinza-claro);
+    font-size: 12px;
+    text-align: center;
+    height: 2.5rem;
+    width: 19.5rem;
+}
+.botao__formulario{
+    color: var(--branco);
+    background-color: var(--coral);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--fonte);
+    height: 2.5rem;
+    line-height: 24px;
+    margin: 2rem auto;
+    width: 9.25rem;
+}
+.esconde__formulario{
+    background-image: url(../image/Mobile/Formulario/Ocultar.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 16px;
+    width: 18px;
+    left: 302px;
+    top: 554px;
+    border-radius: 0px;    
+}
+.esconde__formulario2{
+    background-image: url(../image/Mobile/Formulario/Ocultar.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 16px;
+    width: 18px;
+    left: 302px;
+    top: 640px;
+    border-radius: 0px;      
+}
+.esconde__formulario3{
+    background-image: url(../image/Mobile/Formulario/Ocultar.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 16px;
+    width: 18px;
+    left: 302px;
+    top: 405px;
+    border-radius: 0px;       
+}
+.link__formulario{
+    color: var(--coral);
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+    .imagem-3{
+        background-image: url(../image/Tablet/imagem-fundo/Forma\ 2.svg);
+    }
+    .esconde__formulario{
+        background-image: url(../image/Tablet/formulario/Vector.svg);
+        height: 16px;
+        position: absolute;
+        left: 66.93%;
+        right: 30.73%;
+        top: 64%;
+        bottom: 39.75%;
+        width: 18px;
+    }
+    .esconde__formulario2{
+        background-image: url(../image/Tablet/formulario/Vector.svg);
+        position: absolute;
+        left: 66.93%;
+        right: 30.73%;
+        top: 74%;
+        bottom: 31.75%;
+    }
+    .esconde__formulario3{
+        background-image: url(../image/Tablet/formulario/Vector.svg);
+        position: absolute;
+        left: 65.89%;
+        right: 31.77%;
+        top: 57%;
+        bottom: 52.55%;
+    }
+    .botao__formulario{
+        margin-bottom: 192px;
+    }
+}
