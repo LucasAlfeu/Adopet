@@ -22,7 +22,7 @@ body{
     width: 247px;
     position: relative;
     top: 17px;
-    left: 30px;
+    left: 100px;
     z-index: -100;
 }
 @media screen and (min-width: 768px) {

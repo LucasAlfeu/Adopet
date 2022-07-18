@@ -1,7 +1,7 @@
 .principal{
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 5.5rem;
 }
 .perfil{
     align-items: center;
