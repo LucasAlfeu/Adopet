@@ -3,6 +3,7 @@
     background-image: none;
 }
 .formulario{
+    align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: 5px;
@@ -36,14 +37,14 @@
     margin: 2rem auto;
     width: 9.25rem;
 }
-.esconde__formulario{
+/* .esconde__formulario{
     background-image: url(../image/Mobile/Formulario/Ocultar.svg);
     background-repeat: no-repeat;
     position: absolute;
     height: 16px;
     width: 18px;
-    left: 302px;
-    top: 554px;
+    left: 350px;
+    top: 571px;      
     border-radius: 0px;    
 }
 .esconde__formulario2{
@@ -52,8 +53,8 @@
     position: absolute;
     height: 16px;
     width: 18px;
-    left: 302px;
-    top: 640px;
+    left: 350px;
+     top: 670px;  
     border-radius: 0px;      
 }
 .esconde__formulario3{
@@ -62,15 +63,23 @@
     position: absolute;
     height: 16px;
     width: 18px;
-    left: 302px;
+    left: 320px;
     top: 405px;
     border-radius: 0px;       
-}
+} */
 .link__formulario{
     color: var(--coral);
     margin-top: 0.5rem;
     font-size: 0.75rem;
 }
+#erro-email, #erro-nome, #erro-senha, #erro-senhaConfirma{
+    display: flex;
+    color: var(--vermelho);
+    margin: 5px 0;
+    font-size: 12px;
+    max-width: 19.5rem;
+}
+
 @media screen and (min-width: 768px) {
     .imagem-3{
         background-image: url(../image/Tablet/imagem-fundo/Forma\ 2.svg);
@@ -104,6 +113,14 @@
     .botao__formulario{
         margin-bottom: 192px;
     }
+    #erro-email, #erro-nome, #erro-senha, #erro-senhaConfirma{
+        display: flex;
+        color: var(--vermelho);
+        margin: 5px 0;
+        font-size: 12px;
+        max-width: 19.5rem;
+    }
+
 }
 @media screen and (min-width: 1440px) {
     .input__formulario {
@@ -132,5 +149,12 @@
         right: 39.65%;
         top: 52%;
         bottom: 50.39%;
+    }
+    #erro-email, #erro-nome, #erro-senha, #erro-senhaConfirma{
+        display: flex;
+        color: var(--vermelho);
+        margin: 5px 0;
+        font-size: 12px;
+        max-width: 19.5rem;
     }
 }

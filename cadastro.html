@@ -35,28 +35,33 @@
                 <p class="primeiro__texto">Ainda não tem cadastro?</p>
                 <p class="segundo__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
             </section>
-            <section class="formulario">
+            <form class="formulario" id="form">
+
                 <label for="email" class="nome__formulario">Email</label>
-                <input type="email" name="" id="email" class="input__formulario" placeholder="Escolha seu melhor email" required>
+                <input type="email" name="email" id="email" class="input__formulario" placeholder="Escolha seu melhor email" >
+                <span id="erro-email"></span>
 
                 <label for="nome" class="nome__formulario">Nome</label>
-                <input type="text" name="" id="nome" class="input__formulario" placeholder="Digite seu nome completo" required>
+                <input type="text" name="nome" id="nome" class="input__formulario" placeholder="Digite seu nome completo" >
+                <span id="erro-nome"></span>
 
-                <label for="senha" class="nome__formulario">Senha</label>
-                
-                <input type="password" name="" id="senha" class="input__formulario" placeholder="Crie uma senha" required>
+                <label for="senha" class="nome__formulario">Senha</label>      
+                <input type="password" name="senha" id="senha" class="input__formulario" placeholder="Crie uma senha" minlength="8">                    
                 <div class="esconde__formulario"></div>
+                <span id="erro-senha"></span>
 
-                <label for="senhaConfirmada" class="nome__formulario">Confirme sua senha</label>
-                
+                <label for="senha_confirma" class="nome__formulario">Confirme sua senha</label>                
                 <div class="esconde__formulario2"></div>
-                <input type="password" name="" id="senhaConfirmada" class="input__formulario" placeholder="Repita a senha criada acima" required>
-                
+                <input type="password" name="senha_confirma" id="senha_confirma" class="input__formulario" placeholder="Repita a senha criada acima" >
+                <span id="erro-senhaConfirma"></span>
+                    
                 <input type="button" value="Cadastrar" class="botao__formulario">
-            </section>
+            </form>
         </main> 
         <footer class="rodape">
             <p class="texto__rodape">2022 - Desenvolvido por Alura.</p>
         </footer> 
+
+        <script src="./asstes/js/validaCadastro.js"></script>
 </body>
 </html>
