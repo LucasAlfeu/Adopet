@@ -1,0 +1,224 @@
+@media (min-width: 360px) and (max-width:768px){
+    .shape{
+        display: none;
+    }
+    .profile {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;
+        margin-top: 168px;
+        text-align: center;
+        &__text {
+            color: #3772FF;
+            margin: 0 67px 24px;
+        }
+        &__form {
+            background: #F7F7F7;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        &__title {
+            color: #737380;
+            font-size: 21px;
+            line-height: 24px;
+            margin: 32px 129px 0;
+        }
+        &__label {
+            color: #3772FF;
+            font-weight: 600;
+            line-height: 24px;
+            padding-left: 1rem;
+            margin: 8px 0 16px;
+        }
+        &__labelPhoto{
+            color: #FC7071;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 4px 92px;
+        }
+        &__inputImage{
+            display: none;
+        }
+        &__photoUser {
+            height: 80px;
+            margin: 0 116px;
+            width: 80px;
+        }
+        &__inputImage {
+            color: #FC7071;
+            margin: 0.5rem 0.2rem;
+        }
+        &__input, &__textArea {
+            background: #FFFFFF;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            margin: 0 16px;
+            padding: 12px 16px;
+            mix-blend-mode: normal;
+            width: 280px;
+        }
+        &__btnSave{
+            background: #FC7071;
+            border-radius: 6px;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 600;
+            height: 40px;
+            margin: 32px 98px 48px;
+            width: 148px;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width:1440px){
+    .profile {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;
+        margin-top: 285px;
+        text-align: center;
+        &__text {
+            color: #3772FF;
+            margin: 0 67px 24px;
+        }
+        &__form {
+            background: #F7F7F7;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        &__title {
+            color: #737380;
+            font-size: 21px;
+            line-height: 24px;
+            margin: 32px 235px 0;
+        }
+        &__label {
+            color: #3772FF;
+            font-weight: 600;
+            line-height: 24px;
+            padding-left: 1rem;
+            margin: 8px 0 16px;
+        }
+        &__labelPhoto{
+            color: #FC7071;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 4px 198px;
+        }
+        &__inputImage{
+            display: none;
+        }
+        &__photoUser {
+            height: 80px;
+            margin: 0 222px;
+            width: 80px;
+        }
+        &__inputImage {
+            color: #FC7071;
+            margin: 0.5rem auto;
+        }
+        &__input, &__textArea {
+            background: #FFFFFF;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            margin: 0 16px;
+            padding: 12px 16px;
+            mix-blend-mode: normal;
+            width: 492px;
+        }
+        &__btnSave{
+            background: #FC7071;
+            border-radius: 6px;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 600;
+            height: 40px;
+            margin: 32px auto 48px;
+            width: 148px;
+        }
+    }
+}
+@media (min-width: 1441px){
+    .profile {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;
+        margin-top: 130px;
+        text-align: center;
+        &__text {
+            color: #3772FF;
+            margin: 0 444px 32px;
+        }
+        &__form {
+            background: #F7F7F7;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        &__title {
+            color: #737380;
+            font-size: 21px;
+            line-height: 24px;
+            margin: 32px 235px 0;
+        }
+        &__label {
+            color: #3772FF;
+            font-weight: 600;
+            line-height: 24px;
+            padding-left: 1rem;
+            margin: 8px 0 16px;
+        }
+        &__labelPhoto{
+            color: #FC7071;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 4px 198px;
+        }
+        &__inputImage{
+            display: none;
+        }
+        &__photoUser {
+            height: 80px;
+            margin: 0 222px;
+            width: 80px;
+        }
+        &__inputImage {
+            color: #FC7071;
+            margin: 0.5rem auto;
+        }
+        &__input, &__textArea {
+            background: #FFFFFF;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            margin: 0 16px;
+            padding: 12px 16px;
+            mix-blend-mode: normal;
+            width: 492px;
+        }
+        &__btnSave{
+            background: #FC7071;
+            border-radius: 6px;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 600;
+            height: 40px;
+            margin: 32px auto 48px;
+            width: 148px;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+@media (min-width: 360px) and (max-width: 768px) {
+    .started{
+        background-color: #3772FF;
+        height: 100vh;
+        &__container {
+            align-items: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 168px;
+        }
+        &__logo{
+            height: 46px;
+            width: 168px;
+        }
+        &__title{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 48px;
+        }
+        &__text{        
+            font-family: 'Poppins', sans-serif;
+            line-height: 24px;
+            margin: 0 60px;
+            text-align: center;
+        }
+        &__link {
+            align-items: center;
+            background: #FC7071;
+            border-radius: 6px;
+            display: flex;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+            font-family: 'Poppins', sans-serif;
+            height: 40px;
+            justify-content: center;
+            width: 180px;
+        }
+        &__catDog{
+            position: relative;
+            top: 20px;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+    .started{
+        background-color: #3772FF;
+        height: 100%;
+        &__container {
+            align-items: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 273px;
+        }
+        &__logo{
+            height: 68px;
+            width: 251px;
+        }
+        &__title{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 48px;
+        }
+        &__text{        
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0 214px 28px;
+            text-align: center;
+        }
+        &__link {
+            align-items: center;
+            background: #FC7071;
+            border-radius: 6px;
+            display: flex;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            height: 48px;
+            line-height: 26px;
+            justify-content: center;
+            width: 344px;
+        }
+        &__catDog{
+            height: 442px;
+            position: relative;
+            top: 40px;
+            width: 338px;
+        }
+    }
+}
+@media (min-width: 1441px) {
+    .started{
+        background-color: #3772FF;
+        height: 100%;
+        &__container {
+            align-items: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 67px;
+        }
+        &__logo{
+            height: 64px;
+            width: 260px;
+        }
+        &__title{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 48px;
+        }
+        &__text{        
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0 214px 28px;
+            text-align: center;
+        }
+        &__link {
+            align-items: center;
+            background: #FC7071;
+            border-radius: 6px;
+            display: flex;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            height: 48px;
+            line-height: 26px;
+            justify-content: center;
+            width: 368px;
+        }
+        &__catDog{
+            height: 431px;
+            position: relative;
+            top: 30px;
+            width: 346px;
+        }
+    }
+}

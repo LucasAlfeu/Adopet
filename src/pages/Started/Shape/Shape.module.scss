@@ -1,0 +1,30 @@
+@media (min-width: 360px) and (max-width: 768px) {
+    .shape {
+        background-image: url(../../../assets/ShapeStart/mobile.svg);
+        height: 415px;
+        position: absolute;
+        right: 0;
+        top: 200px;
+        width: 70px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+    .shape {
+        background-image: url(../../../assets/ShapeStart/tablet.svg);
+        height: 664px;
+        position: absolute;
+        right: 0;
+        top: 248px;
+        width: 135px;
+    }
+}
+@media (min-width: 1441px) {
+    .shape {
+        background-image: url(../../../assets/ShapeStart/web.svg);
+        height: 664px;
+        position: absolute;
+        right: 0;
+        top: 180px;
+        width: 135px;
+    }
+}

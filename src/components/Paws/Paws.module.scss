@@ -1,0 +1,30 @@
+@media (min-width: 360px) and (max-width: 768px) {
+    .paws{
+        background: url(../../assets/Paws/mobile.svg);
+        width: 135px;
+        height: 175px;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+    .paws{
+        background: url(../../assets/Paws/tablet.svg);
+        width: 224px;
+        height: 259px;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+    }
+}
+@media (min-width: 1440px) {
+    .paws{
+        background: url(../../assets/Paws/web.svg);
+        width: 294px;
+        height: 350px;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+    }
+}

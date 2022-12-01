@@ -1,0 +1,36 @@
+@media (min-width: 360px) and (max-width: 768px) {
+    .shape{
+        background: url(../../assets/ShapeMedium/mobile.svg);
+        height: 415px;
+        width: 85px;
+        position: absolute;
+        z-index: -100;
+        left: 0;
+        top: 368px;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+    .shape{
+        background: url(../../assets/ShapeMedium/tablet.svg);
+        height: 664px;
+        width: 134px;
+        position: absolute;
+        z-index: -100;
+        right: 0;
+        top: 268px;
+    }
+    
+}
+@media (min-width: 1440px) {
+    .shape{
+        background: url(../../assets/ShapeMedium/web.svg);
+        height: 664px;
+        width: 135px;
+        position: absolute;
+        z-index: -100;
+        right: 0;
+        top: 180px;
+    }
+    
+}

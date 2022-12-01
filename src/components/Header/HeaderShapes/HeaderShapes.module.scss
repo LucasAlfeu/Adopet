@@ -1,0 +1,32 @@
+
+
+@media (min-width: 360px) and (max-width: 768px){
+    .shape {
+        background: url(../../../assets/ShapeHeader/mobile.svg);
+        background-repeat: no-repeat;
+        height: 320px;
+        position: absolute;
+        width: 100vw;
+        z-index: 100;
+    }
+}
+@media (min-width: 769px) and (max-width: 1440px){
+    .shape {
+        background: url(../../../assets/ShapeHeader/tablet.svg);
+        background-repeat: no-repeat;
+        height: 440px;
+        position: absolute;
+        width: 560px;
+        z-index: 100;
+    }
+}
+@media (min-width: 1441px){
+    .shape {
+        background: url(../../../assets/ShapeHeader/web.svg);
+        background-repeat: no-repeat;
+        height: 470px;
+        position: absolute;
+        width: 560px;
+        z-index: 100;
+    }
+}
