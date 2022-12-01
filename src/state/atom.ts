@@ -1,5 +1,6 @@
 import { atom } from 'recoil';
 import { IPetList } from 'interface/IPetList';
+import { IPerfil } from 'interface/IPerfil';
 
 export const listaDePetsState = atom<IPetList[]>({
     key: 'listaDePetsState',
@@ -77,4 +78,9 @@ export const listaDePetsState = atom<IPetList[]>({
             "imagem": "/imagePets/zelda.svg"
         }
     ]
+})
+
+export const listaDePerfilState = atom<IPerfil[]>({
+    key: 'listaDePerfilState',
+    default: []
 })
