@@ -8,6 +8,7 @@ import Footer from "components/Footer";
 import lockVision from 'assets/lockVision.svg';
 import { useSetRecoilState } from "recoil";
 import { listaDePerfilState } from "state/atom";
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Register() {
@@ -16,6 +17,7 @@ export default function Register() {
     const [nome, setNome] = useState<string>('')
     const [senha, setSenha] = useState<string>('')
     const [senhaConfirmada, setSenhaConfirmada] = useState<boolean>(false)
+    const navigate = useNavigate()
     
 
     const validaEmail = (e: React.FocusEvent<HTMLInputElement, Element>) => {
@@ -41,6 +43,11 @@ export default function Register() {
         confirmaSenha === senha ? setSenhaConfirmada(true) : console.log('Senhas diferente')
     }
 
+    const confirmaCadastro = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        senhaConfirmada ? console.log(`Nome: ${nome} - Email:${email} - Senha: ${senha}`) : console.log('Houve algum erro') 
+        senhaConfirmada ? navigate('/home') : console.log('Houve algum erro') 
+    }
     
     return (
         <section className={styles.register}>
@@ -50,7 +57,7 @@ export default function Register() {
             <div className={styles.register__container}>
                 <img src={blueLogo} className={styles.register__logo} alt="Adopet Logomarca" />
                 <p className={styles.register__text}>Ainda não tem cadastro? Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
-                <form className={styles.register__form} onSubmit={(e) => {}}>
+                <form className={styles.register__form} onSubmit={(e) => confirmaCadastro(e)}>
                     <label className={styles.register__label} htmlFor="email">Email</label>
                     <input className={styles.register__input} onBlur={(e) => validaEmail(e)} type="text" name="email" placeholder="Digite seu email" />
 
