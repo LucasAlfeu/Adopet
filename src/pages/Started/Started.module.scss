@@ -2,6 +2,7 @@
     .started{
         background-color: #3772FF;
         height: 100vh;
+        width: 100vw;
         &__container {
             align-items: center;
             color: white;
@@ -36,6 +37,10 @@
             height: 40px;
             justify-content: center;
             width: 180px;
+        }
+        &__goTo{            
+            color: #FFFFFF;
+            text-decoration: none;
         }
         &__catDog{
             position: relative;
@@ -85,6 +90,10 @@
             line-height: 26px;
             justify-content: center;
             width: 344px;
+        }
+        &__goTo{            
+            color: #FFFFFF;
+            text-decoration: none;
         }
         &__catDog{
             height: 442px;
@@ -136,6 +145,10 @@
             line-height: 26px;
             justify-content: center;
             width: 368px;
+        }
+        &__goTo{            
+            color: #FFFFFF;
+            text-decoration: none;
         }
         &__catDog{
             height: 431px;

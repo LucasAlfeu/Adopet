@@ -16,8 +16,8 @@ export default function Started() {
                 <img src={whiteLogo} className={styles.started__logo} alt="Adopet logomarca" />
                 <h2 className={styles.started__title}>Boas Vindas</h2>
                 <p className={styles.started__text}>Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!</p>
-                <Link to={'/login'}><p className={styles.started__link}>Já tenho conta</p></Link> 
-                <Link to={"/register"}><p className={styles.started__link}>Quero me cadastrar</p></Link>
+                <Link to={'/login'} className={styles.started__goTo}><p className={styles.started__link}>Já tenho conta</p></Link> 
+                <Link to={"/register"} className={styles.started__goTo}><p className={styles.started__link}>Quero me cadastrar</p></Link>
                 <img src={catDog} className={styles.started__catDog} alt="Gato e cachorro" />
             </div>
             <Footer />
