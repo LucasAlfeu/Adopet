@@ -8,19 +8,14 @@ import Footer from "components/Footer";
 import lockVision from 'assets/lockVision.svg';
 import useValidaFormulario from "state/hook/useValidaCadastro";
 import useConfirmaCadastro from "state/hook/useConfirmaCadastro";
+import useEsconderSenha from "state/hook/useEsconderSenha";
 
 
 export default function Register() {
     const {confirmaSenha, validaEmail, validaNome, validaSenha} = useValidaFormulario()
     const confirmaCadastro = useConfirmaCadastro()
-
-    const esconderSenha = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        e.preventDefault()
-        const tagInput = e.currentTarget.parentNode?.children[0]
-        const atributo = tagInput?.attributes[1].value
-        atributo === 'password' ? tagInput?.setAttribute('type', 'text') : tagInput?.setAttribute('type', 'password')
-
-    }
+    const esconderSenha = useEsconderSenha()
+ 
     
     return (
         <section className={styles.register}>
