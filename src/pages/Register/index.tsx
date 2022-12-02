@@ -6,49 +6,13 @@ import ShapeMedium from "components/ShapeMedium";
 import blueLogo from 'assets/blueLogo.svg';
 import Footer from "components/Footer";
 import lockVision from 'assets/lockVision.svg';
-import { useSetRecoilState } from "recoil";
-import { listaDePerfilState } from "state/atom";
-import { useNavigate } from 'react-router-dom'
-import { text } from "node:stream/consumers";
+import useValidaFormulario from "state/hook/useValidaCadastro";
+import useConfirmaCadastro from "state/hook/useConfirmaCadastro";
 
 
 export default function Register() {
-    const setPerfil = useSetRecoilState(listaDePerfilState)
-    const [email, setEmail] = useState<string>('')
-    const [nome, setNome] = useState<string>('')
-    const [senha, setSenha] = useState<string>('')
-    const [senhaConfirmada, setSenhaConfirmada] = useState<boolean>(false)
-    const navigate = useNavigate()
-    
-
-    const validaEmail = (e: React.FocusEvent<HTMLInputElement, Element>) => {
-        const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
-        const emailParaTestar = e.target.value
-        const ehValido = regex.test(emailParaTestar)
-        ehValido ? setEmail(emailParaTestar) : console.log('Email incorreto')
-    }
-    const validaNome = (e: React.FocusEvent<HTMLInputElement, Element>) => { 
-        const regex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g
-        const nomeParaTestar = e.target.value
-        const ehValido = regex.test(nomeParaTestar)
-        ehValido ? setNome(nomeParaTestar) : console.log('nome incorreto')
-    }
-    const validaSenha = (e: React.FocusEvent<HTMLInputElement, Element>) => { //Teste123!
-        const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g
-        const senhaParaTestar = e.target.value
-        const ehValido = regex.test(senhaParaTestar)
-        ehValido ? setSenha(senhaParaTestar) : console.log('senha incorreto')
-    }
-    const confirmaSenha = (e: React.FocusEvent<HTMLInputElement, Element>) => {
-        const confirmaSenha = e.target.value
-        confirmaSenha === senha ? setSenhaConfirmada(true) : console.log('Senhas diferente')
-    }
-
-    const confirmaCadastro = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        senhaConfirmada ? console.log(`Nome: ${nome} - Email:${email} - Senha: ${senha}`) : console.log('Houve algum erro') 
-        senhaConfirmada ? navigate('/home') : console.log('Houve algum erro') 
-    }
+    const {confirmaSenha, validaEmail, validaNome, validaSenha} = useValidaFormulario()
+    const confirmaCadastro = useConfirmaCadastro()
 
     const esconderSenha = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault()

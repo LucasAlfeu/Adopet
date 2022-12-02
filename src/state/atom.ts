@@ -84,3 +84,20 @@ export const listaDePerfilState = atom<IPerfil[]>({
     key: 'listaDePerfilState',
     default: []
 })
+
+export const emailState = atom<string>({
+    key: 'emailState',
+    default: ''
+})
+export const nomeState = atom<string>({
+    key: 'nomeState',
+    default: ''
+})
+export const senhaState = atom<string>({
+    key: 'senhaState',
+    default: ''
+})
+export const confirmaSenhaState = atom<boolean>({
+    key: 'confirmaSenhaState',
+    default: false
+})
