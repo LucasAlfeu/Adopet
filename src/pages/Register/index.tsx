@@ -9,6 +9,7 @@ import lockVision from 'assets/lockVision.svg';
 import { useSetRecoilState } from "recoil";
 import { listaDePerfilState } from "state/atom";
 import { useNavigate } from 'react-router-dom'
+import { text } from "node:stream/consumers";
 
 
 export default function Register() {
@@ -48,6 +49,14 @@ export default function Register() {
         senhaConfirmada ? console.log(`Nome: ${nome} - Email:${email} - Senha: ${senha}`) : console.log('Houve algum erro') 
         senhaConfirmada ? navigate('/home') : console.log('Houve algum erro') 
     }
+
+    const esconderSenha = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        e.preventDefault()
+        const tagInput = e.currentTarget.parentNode?.children[0]
+        const atributo = tagInput?.attributes[1].value
+        atributo === 'password' ? tagInput?.setAttribute('type', 'text') : tagInput?.setAttribute('type', 'password')
+
+    }
     
     return (
         <section className={styles.register}>
@@ -66,14 +75,14 @@ export default function Register() {
 
                         <label className={styles.register__label} htmlFor="senha">Senha</label>
                     <div className={styles.register__box}>
-                        <input className={styles.register__input} onBlur={(e) => validaSenha(e)} type="text" name="senha" placeholder="Digite sua senha" />
-                        <button className={styles.register__hidePassword}><img src={lockVision} alt="Esconder senha" /></button>
+                        <input className={styles.register__input} onBlur={(e) => validaSenha(e)} type='password' name="senha" data-hide placeholder="Digite sua senha" />
+                        <button className={styles.register__hidePassword} onClick={(e) => esconderSenha(e)}><img src={lockVision} alt="Esconder senha" /></button>
                     </div>
 
                         <label className={styles.register__label} htmlFor="confirmar">Confirmar senha</label>
                     <div className={styles.register__box}>
-                        <input className={styles.register__input} onBlur={(e) => confirmaSenha(e)} type="text" name="confirmar" placeholder="Confirme sua senha" />
-                        <button className={styles.register__hidePassword}><img src={lockVision} alt="Esconder senha" /></button>
+                        <input className={styles.register__input} onBlur={(e) => confirmaSenha(e)} type="password" name="confirmar" data-hide placeholder="Confirme sua senha" />
+                        <button className={styles.register__hidePassword} onClick={(e) => esconderSenha(e)} ><img src={lockVision} alt="Esconder senha" /></button>
                     </div>
                     <button className={styles.register__btnRegister}>Cadastrar</button>
                 </form>
