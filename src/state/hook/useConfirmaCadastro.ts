@@ -6,7 +6,6 @@ import { confirmaSenhaState, emailState, listaDePerfilState, nomeState, senhaSta
 
 const useConfirmaCadastro = () => {
     const setPerfil = useSetRecoilState(listaDePerfilState)
-    const perfil = useRecoilValue(listaDePerfilState)
     const navigate = useNavigate()
 
     const nome = useRecoilValue(nomeState)
