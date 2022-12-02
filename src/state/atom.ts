@@ -80,9 +80,9 @@ export const listaDePetsState = atom<IPetList[]>({
     ]
 })
 
-export const listaDePerfilState = atom<IPerfil[]>({
+export const listaDePerfilState = atom<IPerfil>({
     key: 'listaDePerfilState',
-    default: []
+    default: {nome: '', email: '', senha: ''}
 })
 
 export const emailState = atom<string>({

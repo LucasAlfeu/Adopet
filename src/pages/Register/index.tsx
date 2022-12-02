@@ -15,7 +15,6 @@ export default function Register() {
     const {confirmaSenha, validaEmail, validaNome, validaSenha} = useValidaFormulario()
     const confirmaCadastro = useConfirmaCadastro()
     const esconderSenha = useEsconderSenha()
- 
     
     return (
         <section className={styles.register}>
