@@ -1,7 +1,5 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { listaDePerfilState, emailState, nomeState, senhaState, confirmaSenhaState } from "state/atom"
+import { emailState, nomeState, senhaState, confirmaSenhaState } from "state/atom"
 
 
 const useValidaFormulario = () => {

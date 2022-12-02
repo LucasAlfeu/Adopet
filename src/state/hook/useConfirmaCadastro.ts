@@ -23,7 +23,7 @@ const useConfirmaCadastro = () => {
         e.preventDefault()
         if (confirmaSenha) {
             setPerfil(perfilAceito)
-            navigate('/home')
+            navigate('/login')
         } else {
             console.log("Reveja seus dados, houve algum erro")
         }
