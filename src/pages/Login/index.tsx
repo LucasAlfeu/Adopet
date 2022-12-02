@@ -1,41 +1,18 @@
+import React from "react";
 import Header from "components/Header";
 import Paws from "components/Paws";
 import ShapeMedium from "components/ShapeMedium";
-import React from "react";
 import styles from './Login.module.scss';
 import blueLogo from 'assets/blueLogo.svg';
 import lockVision from 'assets/lockVision.svg';
 import Footer from "components/Footer";
-import { useRecoilValue } from "recoil";
-import { listaDePerfilState } from "state/atom";
-import { useNavigate } from "react-router-dom";
 import useEsconderSenha from "state/hook/useEsconderSenha";
+import useLoginValidacao from "state/hook/useLoginValidacao";
 
 export default function Login() {
-    const perfil = useRecoilValue(listaDePerfilState)
-    const navigate = useNavigate()
     const esconderSenha = useEsconderSenha()
-
-    let verificaEmail = ''
-    let verificaSenha = ''
-
-    const listarEmail = (e: React.FocusEvent<HTMLInputElement, Element>): string => {
-        verificaEmail = (e.target.value)
-        return verificaEmail
-    }
-    const listarSenha = (e: React.FocusEvent<HTMLInputElement, Element>): string => {
-        verificaSenha = (e.target.value)
-        return verificaSenha
-    }
-
-    const confirmaLogin = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        if(perfil.email === verificaEmail && perfil.senha === verificaSenha){
-            navigate('/home')
-        } else {
-            console.log('Seu email ou sua senha estão incorretos')
-        }
-    }
+    const {confirmaLogin, listarEmail, listarSenha} = useLoginValidacao()
+    
     return (
         <>
             <Header />
