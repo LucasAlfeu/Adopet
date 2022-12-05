@@ -64,13 +64,6 @@
         &__message{
             margin-right: 8px;
         }
-        &__user{
-            position: relative;
-            right: -35%;
-            top: -115px;
-            width: 40px;
-            z-index: 100;
-        }
     }
 }
 @media (min-width: 769px) and (max-width: 1440px){
@@ -142,13 +135,6 @@
         }
         &__message{
             margin-right: 8px;
-        }
-        &__user{
-            position: relative;
-            right: -35%;
-            top: -235px;
-            width: 48px;
-            z-index: 100;
         }
     }
 }
@@ -222,13 +208,6 @@
         }
         &__message{
             margin-right: 8px;
-        }
-        &__user{
-            position: relative;
-            right: -35%;
-            top: -100px;
-            width: 56px;
-            z-index: 100;
         }
     }
 }

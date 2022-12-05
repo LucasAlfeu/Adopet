@@ -6,7 +6,7 @@ import styles from './Home.module.scss';
 import iconMessage from 'assets/iconMessage.svg';
 import Footer from 'components/Footer';
 import { useNavigate } from 'react-router-dom'
-import user from 'assets/user.svg';
+import ImageProfile from 'components/ImageProfile';
 
 export default function Home() {
     const petList = useRecoilValue(listaDePetsState)
@@ -15,7 +15,7 @@ export default function Home() {
         <>
             <Header />
             <section className={styles.home}>
-                <img className={styles.home__user} src={user} alt="Imagem do usuário" />
+                <ImageProfile />
                 <p className={styles.home__text}>Olá! Veja os amigos disponíveis para adoção!</p>
                 <ul className={styles.home__list}>
                     {petList.map(pet =>
