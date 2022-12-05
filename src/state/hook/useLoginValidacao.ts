@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom"
-import { useRecoilValue } from "recoil"
-import { listaDePerfilState } from "state/atom"
+import { useRecoilValue, useSetRecoilState } from "recoil"
+import { estaLogadoState, listaDePerfilState } from "state/atom"
 
 const useLoginValidacao = () => {
     const perfil = useRecoilValue(listaDePerfilState)
+    const setEstaLogado = useSetRecoilState(estaLogadoState)
     const navigate = useNavigate()
     let verificaEmail = ''
     let verificaSenha = ''
@@ -20,6 +21,7 @@ const useLoginValidacao = () => {
     const confirmaLogin = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if(perfil.email === verificaEmail && perfil.senha === verificaSenha){
+            setEstaLogado(true)
             navigate('/home')
         } else {
             console.log('Seu email ou sua senha estão incorretos')

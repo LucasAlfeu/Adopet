@@ -101,3 +101,7 @@ export const confirmaSenhaState = atom<boolean>({
     key: 'confirmaSenhaState',
     default: false
 })
+export const estaLogadoState = atom<boolean>({
+    key: 'estaLogadoState',
+    default: false
+})
