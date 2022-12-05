@@ -4,6 +4,7 @@ import styles from './Profile.module.scss';
 import user from 'assets/user.svg';
 import Footer from 'components/Footer';
 import ShapeMedium from 'components/ShapeMedium';
+import ImageProfile from 'components/ImageProfile';
 
 export default function Profile() {
     return (
@@ -11,6 +12,7 @@ export default function Profile() {
             <Header />
             <span className={styles.shape}><ShapeMedium /></span>
             <section className={styles.profile}>
+                <ImageProfile />
                 <p className={styles.profile__text}>Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
 
                 <form className={styles.profile__form}>
