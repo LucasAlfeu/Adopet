@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from './Register.module.scss';
 import Header from "components/Header";
 import Paws from "components/Paws";
@@ -9,7 +9,6 @@ import lockVision from 'assets/lockVision.svg';
 import useValidaFormulario from "state/hook/useValidaCadastro";
 import useConfirmaCadastro from "state/hook/useConfirmaCadastro";
 import useEsconderSenha from "state/hook/useEsconderSenha";
-
 
 export default function Register() {
     const {confirmaSenha, validaEmail, validaNome, validaSenha} = useValidaFormulario()
